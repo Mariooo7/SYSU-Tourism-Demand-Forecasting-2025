@@ -7,17 +7,29 @@
 
 ## 主要项目结构
 ├── data/ # 原始数据目录 
+
 │ └── round_/ # 各轮次数据 
+
 ├── models/ # 训练好的模型 
+
 │ └── round_/ # 各轮次模型
+
 ├── configs/ # 模型参数 
+
 │ ├── statsforecast_models.py # statsforecast模型参数 
+
 │ ├── ml_models.py # sklearn模型参数
+
 ├── src/ # 源代码 
+
 │ ├── feature_engineering.py # 特征工程 
+
 │ ├── forecasting.py # 时间序列模型训练+预测
+
 │ ├── model_fit.py # 机器学习模型训练 
+
 │ └── model_predict.py # 机器学习模型预测 
+
 └── round_*.ipynb # 各轮次分析笔记本
 
 ## 外部数据
