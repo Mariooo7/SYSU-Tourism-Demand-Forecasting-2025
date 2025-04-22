@@ -4,31 +4,21 @@
 This project is the final competition assignment for the 2024-2 semester course "Tourism Big Data Forecasting" at SYSBS. The objective is to forecast inbound passenger numbers at 5 major Hong Kong border crossings for the next 5 days, with daily submissions. It employs time series analysis models based on `statsforecast` and machine learning models based on `sklearn`.
 
 ## Main Project Structure
+```
 ├── data/                # Raw data directory
-
 │   └── round_/         # Data for each competition round
-
 ├── models/             # Trained models
-
 │   └── round_/         # Models for each round
-
 ├── configs/            # Model parameters
-
 │   ├── statsforecast_models.py  # Statsforecast parameters
-
 │   ├── ml_models.py             # Sklearn parameters
-
 ├── src/                # Source code
-
 │   ├── feature_engineering.py   # Feature engineering
-
 │   ├── forecasting.py           # Time series training + prediction
-
 │   ├── model_fit.py            # ML model training
-
 │   └── model_predict.py        # ML model prediction
-
 └── round_*.ipynb       # Analysis notebooks for each round
+```
 
 ## External Data
 1. `ex_rate.xlsx` in data directory stores HKD/RMB exchange rates (no cleaning required)
@@ -56,31 +46,21 @@ Saved models in models directory may be incomplete or contain redundant files
 使用基于`statsforecast`的时间序列分析模型和基于`sklearn`的机器学习模型
 
 ## 主要项目结构
+```
 ├── data/ # 原始数据目录 
-
 │ └── round_/ # 各轮次数据 
-
-├── models/ # 训练好的模型 
-
+├── models/ # 训练好的模型
 │ └── round_/ # 各轮次模型
-
 ├── configs/ # 模型参数 
-
 │ ├── statsforecast_models.py # statsforecast模型参数 
-
 │ ├── ml_models.py # sklearn模型参数
-
 ├── src/ # 源代码 
-
 │ ├── feature_engineering.py # 特征工程 
-
 │ ├── forecasting.py # 时间序列模型训练+预测
-
 │ ├── model_fit.py # 机器学习模型训练 
-
 │ └── model_predict.py # 机器学习模型预测 
-
 └── round_*.ipynb # 各轮次分析笔记本
+```
 
 ## 外部数据
 1. `data`目录下的`ex_rate.xlsx`存储港币兑人民币汇率，无需清洗
