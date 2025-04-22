@@ -1,7 +1,7 @@
 # Hong Kong Tourism Flow Forecasting Project
 
 ## Project Introduction
-This project is the final competition assignment for the 2024-2 semester course "Tourism Big Data Forecasting" at Sun Yat-sen University School of Management. The objective is to forecast inbound passenger numbers at 5 major Hong Kong border crossings for the next 5 days, with daily submissions. It employs time series analysis models based on `statsforecast` and machine learning models based on `sklearn`.
+This project is the final competition assignment for the 2024-2 semester course "Tourism Big Data Forecasting" at SYSBS. The objective is to forecast inbound passenger numbers at 5 major Hong Kong border crossings for the next 5 days, with daily submissions. It employs time series analysis models based on `statsforecast` and machine learning models based on `sklearn`.
 
 ## Main Project Structure
 ├── data/                # Raw data directory
