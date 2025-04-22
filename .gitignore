@@ -1,0 +1,41 @@
+# 通用忽略规则
+*.so
+*.egg-info/
+*.egg
+__pycache__/
+*.swp
+*.bak
+~$*
+.DS_Store
+.vscode/
+*.log
+*.sqlite
+*.sqlite3
+
+# PyCharm IDE 配置
+.idea/
+*.iml
+modules.xml
+workspace.xml
+
+# 项目特定忽略
+/报告.pptx
+/报告.xlsx
+/~$报告.xlsx
+/catboost_info/
+.ipynb_checkpoints/
+*.ipynb_checkpoints/
+
+# 临时文件
+*.tmp
+*.temp
+
+# 环境相关
+.env
+.venv/
+venv/
+ENV/
+/project_structure.png
+/project_structure_pro.png
+/project_structure_TD.png
+/round_8.pdf

@@ -49,7 +49,6 @@ class RollingForecaster:
         return predictions
 
     def run(self):
-        global ensemble_model
         metrics = pd.DataFrame(index=self.steps, columns=self.model_names.append('Ensemble'))
         df_predictions = self.test.copy()
 
@@ -111,29 +110,6 @@ class RollingForecaster:
 
         return metrics, df_predictions, ensemble_model
 
-    def rolling_predict(self, data, model, days, horizon):
-        predictions= [] # 定义预测结果
-        # 循环预测
-        for i in range(0, days, horizon):
-            fcst = StatsForecast(
-                models=[model],
-                freq='D', # 时间频率(日)
-            )
-            forecast = fcst.forecast(
-                df = data,
-                h=horizon,
-                time_col='Date',
-                target_col='Total'
-            )
-            # 记录结果
-            pred = forecast[model.__class__.__name__].values[:min(days-i, horizon)]
-            predictions.extend(pred)
-            pred_df = pd.DataFrame({
-                'Date': pd.date_range(start=data['Date'].iloc[-1], periods=len(pred) + 1, freq='D')[1:],
-                'Total': pred
-            })
-            data = pd.concat([data, pred_df])
-        return predictions
 
 def process_portfolio(name, data, step):
     train, test = split_data(data)
