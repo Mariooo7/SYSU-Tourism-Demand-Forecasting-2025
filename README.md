@@ -27,7 +27,7 @@ This project is the final competition assignment for the 2024-2 semester course 
 4. `data/rf` stores rainfall data, cleaned in `clean_rf.ipynb`
 
 ## Exploratory Analysis
-Performed in explore_*.ipynb notebooks to determine:
+Performed in `explore_*.ipynb` notebooks to determine:
 - Seasonality patterns
 - Stationarity
 - Cycle lengths
