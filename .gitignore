@@ -13,8 +13,9 @@ __pycache__/
 *.sqlite3
 
 # PyCharm IDE 配置
-.idea/
-.idea/*.iml
+.idea
+.idea/*
+*.iml
 modules.xml
 workspace.xml
 
