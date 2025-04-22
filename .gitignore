@@ -14,7 +14,7 @@ __pycache__/
 
 # PyCharm IDE 配置
 .idea/
-*.iml
+.idea/*.iml
 modules.xml
 workspace.xml
 
